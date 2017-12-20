@@ -20,8 +20,8 @@ import math
 def main():
     """ Calls the   TEST   functions in this module. """
     # run_test_sum_sequence()
-    run_test_count_items_bigger_than()
-    # run_test_count_positive_sines()
+    # run_test_count_items_bigger_than()
+    run_test_count_positive_sines()
     # run_test_sum_first_n()
 
 
@@ -544,9 +544,17 @@ def count_positive_sines(numbers):
       :type sequence: list or tuple (of numbers)
     """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
+
+    count = 0
+
+    for k in range(len(numbers)):
+        if math.sin(numbers[k]) > 0:
+            count += 1
+
+    return count
 
 
 def run_test_sum_first_n():
