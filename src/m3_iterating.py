@@ -13,8 +13,8 @@ import rosegraphics as rg
 def main():
     """ Calls the   TEST   functions in this module. """
     # run_test_count_negatives()
-    run_test_count_short_ones()
-    # run_test_draw_circles()
+    # run_test_count_short_ones()
+    run_test_draw_circles()
 
 
 def run_test_count_negatives():
@@ -331,10 +331,15 @@ def draw_circles(window, points, radius, color):
       :type color: str
     """
     # ------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # DONE: 6. Implement and test this function.
     #          Tests have been written for you (above).
-    # ------------------------------------------------------------------
 
+    for k in range(len(points)):
+        center = points[k]
+        circle = rg.Circle(center, radius)
+        circle.fill_color = color
+        circle.attach_to(window)
+    window.render()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
