@@ -13,14 +13,14 @@ import rosegraphics as rg
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_count_negatives()
-    run_test_count_short_ones()
-    run_test_draw_circles()
+    # run_test_count_short_ones()
+    # run_test_draw_circles()
 
 
 def run_test_count_negatives():
     """ Tests the   count_negatives   function. """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement this TEST function.
+    # DONE: 2. Implement this TEST function.
     #   It TESTS the  count_negatives  function defined below.
     #   Include at least ** 2 ** ADDITIONAL tests beyond those we wrote.
     #
@@ -114,9 +114,16 @@ def count_negatives(seq):
       :type seq: (list | tuple) of (int | float)
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     # ------------------------------------------------------------------
+
+    count = 0
+    for k in range(len(seq)):
+        if seq[k] < 0:
+            count += 1
+
+    return count
 
 
 def run_test_count_short_ones():
