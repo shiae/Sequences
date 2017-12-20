@@ -9,8 +9,8 @@ It also demonstrates using an ORACLE and/or PROBABILITY THEORY
 in testing and BOUNDARY (EDGE) TESTING.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Allison Shi.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import random
 import builtins  # Never necessary, but here to make a point about SUM
@@ -20,9 +20,9 @@ import math
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_sum_sequence()
-    run_test_count_items_bigger_than()
-    run_test_count_positive_sines()
-    run_test_sum_first_n()
+    # run_test_count_items_bigger_than()
+    # run_test_count_positive_sines()
+    # run_test_sum_first_n()
 
 
 def run_test_sum_sequence():
@@ -33,7 +33,7 @@ def run_test_sum_sequence():
     print('--------------------------------------------------')
 
     # ------------------------------------------------------------------
-    # TODO: 2. READ the COMMENTS and CODE in this function,
+    # DONE: 2. READ the COMMENTS and CODE in this function,
     #  asking questions as needed.
     #
     #   When you believe that you understand:
@@ -213,6 +213,10 @@ def sum_sequence(sequence):
     #         as an ORACLE in TESTING this function, however.
     # ------------------------------------------------------------------
 
+    total = 0
+    for k in range():
+        total += sequence[k]
+    return total
 
 def run_test_count_items_bigger_than():
     """ Tests the   count_items_bigger_than   function. """
