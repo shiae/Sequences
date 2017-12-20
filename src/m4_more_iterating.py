@@ -203,7 +203,7 @@ def sum_sequence(sequence):
       :type sequence: list or tuple (of integers)
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Tests have been written for you (above).
     #
     # RESTRICTION:
@@ -214,7 +214,7 @@ def sum_sequence(sequence):
     # ------------------------------------------------------------------
 
     total = 0
-    for k in range():
+    for k in range(len(sequence)):
         total += sequence[k]
     return total
 
