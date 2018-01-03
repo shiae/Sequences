@@ -218,6 +218,7 @@ def sum_sequence(sequence):
         total += sequence[k]
     return total
 
+
 def run_test_count_items_bigger_than():
     """ Tests the   count_items_bigger_than   function. """
     # ------------------------------------------------------------------
@@ -412,6 +413,7 @@ def count_items_bigger_than(numbers, threshold):
 
     return count
 
+
 def run_test_count_positive_sines():
     """ Tests the   count_positive_sines   function. """
     # ------------------------------------------------------------------
@@ -560,7 +562,7 @@ def count_positive_sines(numbers):
 def run_test_sum_first_n():
     """ Tests the   sum_first_n   function. """
     # ------------------------------------------------------------------
-    # TODO: 8. Implement this TEST function.
+    # DONE: 8. Implement this TEST function.
     #   It TESTS the  sum_first_n  function defined below.
     #   Include at least ** 2 ** ADDITIONAL tests.
     #
@@ -631,6 +633,20 @@ def run_test_sum_first_n():
 
     # TO DO 8 (continued):  Add your 2 ADDITIONAL tests here:
 
+    # Test 8:
+    expected = 98
+    actual = sum_first_n([98, 25, 68], 1)
+    print()
+    print('Test 8 expected:', expected)
+    print('       actual:  ', actual)
+
+    # Test 9:
+    expected = 15
+    actual = sum_first_n([12, 3, 72, 46], 2)
+    print()
+    print('Test 9 expected:', expected)
+    print('       actual:  ', actual)
+
 
 def sum_first_n(numbers, n):
     """
@@ -663,6 +679,8 @@ def sum_first_n(numbers, n):
     #      -- The TESTING code above does use   built_ins.sum
     #         as an ORACLE in TESTING this function, however.
     # ------------------------------------------------------------------
+
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
