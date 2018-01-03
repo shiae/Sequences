@@ -50,8 +50,8 @@ def main():
     # run_test_print_all_items_forwards(sequence1, sequence2, sequence3, sequence4)
     # run_test_print_all_items_backwards(sequence1, sequence2, sequence3, sequence4)
     # run_test_print_items_at_odd_indices(sequence1, sequence2, sequence3, sequence4)
-    run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4)
-#     run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
+    # run_test_print_items_in_second_half(sequence1, sequence2, sequence3, sequence4)
+    run_test_print_items_that_are_bigger_than_5()  # Uses different sequences
 #     run_test_print_items_that_are_strings(sequence1, sequence2, sequence3, sequence4)
 #     run_test_print_items_that_are_odd_integers(sequence1, sequence2, sequence3, sequence4)
 
@@ -460,10 +460,13 @@ def print_items_that_are_bigger_than_5(sequence):
     Precondition: All the items in the sequence are integers.
     """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
 
+    for k in range(len(sequence)):
+        if sequence[k] > 5:
+            print(sequence[k], 'is at sequence', k)
 
 # ----------------------------------------------------------------------
 # Iterating through a sequence, selecting items:
